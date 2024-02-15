@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> grid 3 por 2 em css</title>
+    <style>
+        * {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
+  text-align: center;
+  
+}
+.grid{
+    grid-template-columns: repeat(4, 25%);
+    border: 3px solid #000;
+    box-shadow: 10px 10px 10px ;
+    display: grid;
+    display: flex;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 200px 50px 100px;
+  grid-template-rows: 50px 50px;
+  grid-gap: 10px;
+ 
+}
+
+.wrapper div:nth-child(1) { background: red }
+.wrapper div:nth-child(2) { background: green }
+.wrapper div:nth-child(3) { background: blue }
+.wrapper div:nth-child(4) { background: yellow }
+.wrapper div:nth-child(5) { background: cyan }
+.wrapper div:nth-child(6) { background: orange }
+
+*{
+  margin: 30;
+  font-family: arial;
+}
+.color-1{
+  background-color: #1C35CF;
+}
+.color-2{
+  background-color: #8A33FA;
+}
+.color-3{
+  background-color: #BD43C0;
+}
+.color-4{
+  background-color: #DD375B;
+}
+.color-5{
+  background-color: #1A9541;
+}
+.color-6{
+  background-color: #D44024;
+}
+.grid{
+  display: grid;
+}
+.grid-item{
+  color: white;
+  padding: 20px;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>como colorir as caixinhas duma grid 3 por 2 em css</h1>
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <h1>Criando o arquivo HTML com o layout.</h1>
+    <div class="grid">
+        <div class="grid-item color-1">1</div>
+        <div class="grid-item color-2">2</div>
+        <div class="grid-item color-3">3</div>
+        <div class="grid-item color-4">4</div>
+        <div class="grid-item color-5">5</div>
+        <div class="grid-item color-6">6</div>
+      </div>
+</body>
+</html>
